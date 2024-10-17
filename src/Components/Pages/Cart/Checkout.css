@@ -1,0 +1,141 @@
+/* checkout.css */
+
+.checkout-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    color: #495057;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .checkout-summary {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  .checkout-summary h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #343a40;
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .summary-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .summary-item span {
+    font-size: 16px;
+    color: #495057;
+  }
+  
+  .total-price {
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .checkout-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .checkout-button:hover {
+    background-color: #218838;
+  }
+  
+  @media (max-width: 600px) {
+    .checkout-container {
+      padding: 15px;
+    }
+  
+    .checkout-header h2 {
+      font-size: 20px;
+    }
+  
+    .form-group label,
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      font-size: 14px;
+    }
+  
+    .checkout-summary h3 {
+      font-size: 18px;
+    }
+  
+    .summary-item span {
+      font-size: 14px;
+    }
+  
+    .checkout-button {
+      font-size: 16px;
+    }
+  }
+  

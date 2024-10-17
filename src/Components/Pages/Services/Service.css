@@ -1,0 +1,261 @@
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 100%;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.breeding-images {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.breeding-images img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.breeding-details {
+  flex: 2;
+  min-width: 300px;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+p, ul {
+  color: #555;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+.grooming-images {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.grooming-images img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.grooming-details {
+  flex: 2;
+  min-width: 300px;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+p, ul {
+  color: #555;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+.boarding-images {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.boarding-images img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.boarding-details {
+  flex: 2;
+  min-width: 300px;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+p, ul {
+  color: #555;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+
+.appointment-button {
+  margin-top: 30px;
+  padding: 12px 20px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-button:hover {
+  background-color: #d35400;
+  transform: translateY(-3px);
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-form input,
+.appointment-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+.request-button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.request-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .breeding-details {
+    margin-left: 0;
+    text-align: center;
+  }
+  .grooming-images img {
+    width: 80%;
+  }
+
+  .appointment-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-container {
+    padding: 10px;
+  }
+
+  .breeding-images img {
+    max-width: 100%;
+  }
+
+  .breeding-details {
+    padding: 10px;
+  }
+  .grooming-images img {
+    max-width: 100%;
+  }
+
+  .grooming-details {
+    padding: 10px;
+  }
+
+  .appointment-form {
+    padding: 15px;
+  }
+  .boarding-images {
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  .boarding-details {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .appointment-form input,
+  .appointment-form textarea {
+    font-size: 12px;
+  }
+
+  .appointment-button, .request-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .breeding-images img {
+    max-width: 100%;
+  }
+
+  .breeding-details {
+    padding: 5px;
+  }
+  .grooming-images img {
+    max-width: 100%;
+  }
+
+  .grooming-details {
+    padding: 5px;
+  }
+  h2, p, ul {
+    font-size: 14px;
+  }
+}

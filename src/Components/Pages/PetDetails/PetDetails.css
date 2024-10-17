@@ -1,0 +1,55 @@
+.pet-detail-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1200px;
+  align-items: center; /* Center align items */
+  justify-content: center; /* Center vertically */
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9; /* Soft background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 400px; /* Fixed max width for responsiveness */
+  margin: 20px auto; /* Center on page */
+}
+
+.pet-detail-image {
+  width: 100%; /* Full width */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Cover the area */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  margin-bottom: 15px; /* Space below image */
+}
+
+.pet-name {
+  font-size: 24px; /* Larger font size for name */
+  color: #333; /* Darker text color */
+  margin-bottom: 10px; /* Space below name */
+}
+
+.pet-description {
+  font-size: 16px; /* Regular font size */
+  color: #666; /* Softer text color */
+  margin-bottom: 15px; /* Space below description */
+}
+
+.pet-price {
+  font-size: 18px; /* Slightly larger for emphasis */
+  color: #28a745; /* Green for price */
+  margin-bottom: 20px; /* Space below price */
+}
+
+.proceed-to-buy-button {
+  background-color: #28a745; /* Green */
+  color: white;
+  padding: 12px 25px; /* More padding for better touch area */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px; /* Slightly larger font size */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.proceed-to-buy-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}

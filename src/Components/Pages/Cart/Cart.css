@@ -1,0 +1,108 @@
+/* Cart.css */
+
+.cart-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #e0e0e0;
+  overflow: hidden; /* Prevent scrolling */
+  margin-left: -150px;
+}
+
+.cart-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem; /* Reduced gap */
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Reduced gap */
+  overflow-y: auto; /* Allow scrolling within this section if needed */
+  max-height: 60vh; /* Limit height to avoid overflowing */
+}
+
+.cart-items-title {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  color: grey;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cart-items-item {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  padding: 0.5rem; /* Reduced padding */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.cart-items-item p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.cart-items-item .remove {
+  cursor: pointer;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.cart-bottom {
+  margin-top: 1rem; /* Reduced gap */
+  display: flex;
+  flex-direction: column; /* Stacked for mobile-friendly layout */
+  gap: 0.5rem; /* Reduced gap */
+}
+
+.cart-total {
+  border-top: 1px solid #e0e0e0; /* Added a top border for separation */
+  padding-top: 0.5rem; /* Reduced padding */
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Consistent spacing */
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem; /* Reduced font size for a more compact look */
+}
+
+.cart-total button {
+  border: none;
+  color: white;
+  background-color: #3498db;
+  padding: 8px; /* Reduced padding */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem; /* Reduced button font size */
+}
+
+.cart-total button:hover {
+  background-color: #2980b9;
+}
+
+.empty-cart-message {
+  text-align: center;
+  font-size: 16px;
+  color: #e74c3c;
+  margin-top: 20px;
+}
+
+@media (max-width: 750px) {
+  .cart-bottom {
+      flex-direction: column;
+  }
+}
